@@ -105,52 +105,52 @@
             // mArquivoNovo
             // 
             this.mArquivoNovo.Name = "mArquivoNovo";
-            this.mArquivoNovo.Size = new System.Drawing.Size(180, 22);
+            this.mArquivoNovo.Size = new System.Drawing.Size(145, 22);
             this.mArquivoNovo.Text = "Novo";
             this.mArquivoNovo.Click += new System.EventHandler(this.mArquivoNovo_Click);
             // 
             // mArquivoNova
             // 
             this.mArquivoNova.Name = "mArquivoNova";
-            this.mArquivoNova.Size = new System.Drawing.Size(180, 22);
+            this.mArquivoNova.Size = new System.Drawing.Size(145, 22);
             this.mArquivoNova.Text = "Nova Janela";
             this.mArquivoNova.Click += new System.EventHandler(this.mArquivoNova_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(142, 6);
             // 
             // mArquivoAbrir
             // 
             this.mArquivoAbrir.Name = "mArquivoAbrir";
-            this.mArquivoAbrir.Size = new System.Drawing.Size(180, 22);
+            this.mArquivoAbrir.Size = new System.Drawing.Size(145, 22);
             this.mArquivoAbrir.Text = "Abrir";
             this.mArquivoAbrir.Click += new System.EventHandler(this.mArquivoAbrir_Click);
             // 
             // mArquivoSalvar
             // 
             this.mArquivoSalvar.Name = "mArquivoSalvar";
-            this.mArquivoSalvar.Size = new System.Drawing.Size(180, 22);
+            this.mArquivoSalvar.Size = new System.Drawing.Size(145, 22);
             this.mArquivoSalvar.Text = "Salvar";
             this.mArquivoSalvar.Click += new System.EventHandler(this.mArquivoSalvar_Click);
             // 
             // mArquivoSalvarComo
             // 
             this.mArquivoSalvarComo.Name = "mArquivoSalvarComo";
-            this.mArquivoSalvarComo.Size = new System.Drawing.Size(180, 22);
+            this.mArquivoSalvarComo.Size = new System.Drawing.Size(145, 22);
             this.mArquivoSalvarComo.Text = "Salvar Como";
             this.mArquivoSalvarComo.Click += new System.EventHandler(this.mArquivoSalvarComo_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(142, 6);
             // 
             // mArquivoSair
             // 
             this.mArquivoSair.Name = "mArquivoSair";
-            this.mArquivoSair.Size = new System.Drawing.Size(180, 22);
+            this.mArquivoSair.Size = new System.Drawing.Size(145, 22);
             this.mArquivoSair.Text = "Sair";
             this.mArquivoSair.Click += new System.EventHandler(this.mArquivoSair_Click);
             // 
@@ -337,6 +337,7 @@
             this.txtConteudo.Size = new System.Drawing.Size(784, 515);
             this.txtConteudo.TabIndex = 2;
             this.txtConteudo.Text = "";
+            this.txtConteudo.TextChanged += new System.EventHandler(this.txtConteudo_TextChanged);
             // 
             // Form1
             // 
