@@ -240,15 +240,18 @@
             // 
             // mFormatarQuebra
             // 
+            this.mFormatarQuebra.CheckOnClick = true;
             this.mFormatarQuebra.Name = "mFormatarQuebra";
             this.mFormatarQuebra.Size = new System.Drawing.Size(226, 22);
             this.mFormatarQuebra.Text = "Quebra automática de linha";
+            this.mFormatarQuebra.Click += new System.EventHandler(this.mFormatarQuebra_Click);
             // 
             // mFormatarFonte
             // 
             this.mFormatarFonte.Name = "mFormatarFonte";
             this.mFormatarFonte.Size = new System.Drawing.Size(226, 22);
             this.mFormatarFonte.Text = "Fonte";
+            this.mFormatarFonte.Click += new System.EventHandler(this.mFormatarFonte_Click);
             // 
             // mExibir
             // 
@@ -344,6 +347,7 @@
             this.txtConteudo.Size = new System.Drawing.Size(784, 515);
             this.txtConteudo.TabIndex = 2;
             this.txtConteudo.Text = "";
+            this.txtConteudo.WordWrap = false;
             this.txtConteudo.TextChanged += new System.EventHandler(this.txtConteudo_TextChanged);
             // 
             // Form1

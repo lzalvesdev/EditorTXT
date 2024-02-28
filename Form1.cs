@@ -19,7 +19,7 @@ namespace EditorTXT
             InitializeComponent();
         }
 
-        #region MenuArquivo
+        #region Menu Arquivo
         private void mArquivoNovo_Click(object sender, EventArgs e)
         {
             txtConteudo.Clear();
@@ -160,7 +160,7 @@ namespace EditorTXT
 
         #endregion
 
-        #region MenuEditar
+        #region Menu Editar
         private void mEditarDesfazer_Click(object sender, EventArgs e)
         {
             txtConteudo.Undo();
@@ -219,6 +219,32 @@ namespace EditorTXT
 
             txtConteudo.Text += temp;
             txtConteudo.SelectionStart += index + dataHora.Length;
+        }
+
+        #endregion
+
+        #region Menu Formatar
+        private void mFormatarQuebra_Click(object sender, EventArgs e)
+        {
+            txtConteudo.WordWrap = mFormatarQuebra.Checked;
+        }
+
+        private void mFormatarFonte_Click(object sender, EventArgs e)
+        {
+            FontDialog fonte = new FontDialog();
+            fonte.ShowColor = true;
+            fonte.ShowEffects = true;
+            
+            fonte.Font = txtConteudo.Font;
+            fonte.Color = txtConteudo.ForeColor;
+
+            DialogResult result = fonte.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                txtConteudo.Font = fonte.Font;
+                txtConteudo.ForeColor = fonte.Color;
+            }
         }
         #endregion
 
