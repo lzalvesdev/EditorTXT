@@ -157,7 +157,71 @@ namespace EditorTXT
         {
             mArquivoSalvar.Enabled = true;
         }
+
         #endregion
+
+        #region MenuEditar
+        private void mEditarDesfazer_Click(object sender, EventArgs e)
+        {
+            txtConteudo.Undo();
+        }
+
+        private void mEditarRefazer_Click(object sender, EventArgs e)
+        {
+            txtConteudo.Redo();
+        }
+
+        private void mEditarRecortar_Click(object sender, EventArgs e)
+        {
+            txtConteudo.Cut();
+        }
+
+        private void mEditarCopiar_Click(object sender, EventArgs e)
+        {
+            txtConteudo.Copy();
+        }
+
+        private void mEditarColar_Click(object sender, EventArgs e)
+        {
+            txtConteudo.Paste();
+        }
+
+        private void mEditarExcluir_Click(object sender, EventArgs e)
+        {
+            txtConteudo.Text = txtConteudo.Text.Remove(txtConteudo.SelectionStart, txtConteudo.SelectedText.Length);
+        }
+
+        private void mEditarData_Click(object sender, EventArgs e)
+        {
+            int index = txtConteudo.SelectionStart;
+            string dataHora = DateTime.Now.ToString();
+
+            if (txtConteudo.SelectionStart == txtConteudo.Text.Length)
+            {
+                txtConteudo.Text = txtConteudo.Text + dataHora;
+                txtConteudo.SelectionStart = index + dataHora.Length;
+                return;
+            }
+
+            string temp = "";
+            for (int i = 0; i < txtConteudo.Text.Length; i++)
+            {
+                if (i == txtConteudo.SelectionStart)
+                {
+                    temp += dataHora;
+                    temp += txtConteudo.Text[i];
+                }
+                else
+                {
+                    temp += txtConteudo.Text[i];
+                }
+            }
+
+            txtConteudo.Text += temp;
+            txtConteudo.SelectionStart += index + dataHora.Length;
+        }
+        #endregion
+
 
     }
 }

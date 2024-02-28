@@ -173,54 +173,61 @@
             // mEditarDesfazer
             // 
             this.mEditarDesfazer.Name = "mEditarDesfazer";
-            this.mEditarDesfazer.Size = new System.Drawing.Size(140, 22);
+            this.mEditarDesfazer.Size = new System.Drawing.Size(180, 22);
             this.mEditarDesfazer.Text = "Desfazer";
+            this.mEditarDesfazer.Click += new System.EventHandler(this.mEditarDesfazer_Click);
             // 
             // mEditarRefazer
             // 
             this.mEditarRefazer.Name = "mEditarRefazer";
-            this.mEditarRefazer.Size = new System.Drawing.Size(140, 22);
+            this.mEditarRefazer.Size = new System.Drawing.Size(180, 22);
             this.mEditarRefazer.Text = "Refazer";
+            this.mEditarRefazer.Click += new System.EventHandler(this.mEditarRefazer_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(137, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
             // 
             // mEditarRecortar
             // 
             this.mEditarRecortar.Name = "mEditarRecortar";
-            this.mEditarRecortar.Size = new System.Drawing.Size(140, 22);
+            this.mEditarRecortar.Size = new System.Drawing.Size(180, 22);
             this.mEditarRecortar.Text = "Recortar";
+            this.mEditarRecortar.Click += new System.EventHandler(this.mEditarRecortar_Click);
             // 
             // mEditarCopiar
             // 
             this.mEditarCopiar.Name = "mEditarCopiar";
-            this.mEditarCopiar.Size = new System.Drawing.Size(140, 22);
+            this.mEditarCopiar.Size = new System.Drawing.Size(180, 22);
             this.mEditarCopiar.Text = "Copiar";
+            this.mEditarCopiar.Click += new System.EventHandler(this.mEditarCopiar_Click);
             // 
             // mEditarColar
             // 
             this.mEditarColar.Name = "mEditarColar";
-            this.mEditarColar.Size = new System.Drawing.Size(140, 22);
+            this.mEditarColar.Size = new System.Drawing.Size(180, 22);
             this.mEditarColar.Text = "Colar";
+            this.mEditarColar.Click += new System.EventHandler(this.mEditarColar_Click);
             // 
             // mEditarExcluir
             // 
             this.mEditarExcluir.Name = "mEditarExcluir";
-            this.mEditarExcluir.Size = new System.Drawing.Size(140, 22);
+            this.mEditarExcluir.Size = new System.Drawing.Size(180, 22);
             this.mEditarExcluir.Text = "Excluir";
+            this.mEditarExcluir.Click += new System.EventHandler(this.mEditarExcluir_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(137, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
             // 
             // mEditarData
             // 
             this.mEditarData.Name = "mEditarData";
-            this.mEditarData.Size = new System.Drawing.Size(140, 22);
+            this.mEditarData.Size = new System.Drawing.Size(180, 22);
             this.mEditarData.Text = "Data e Hora";
+            this.mEditarData.Click += new System.EventHandler(this.mEditarData_Click);
             // 
             // mFormatar
             // 
