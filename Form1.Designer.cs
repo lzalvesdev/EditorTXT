@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuBar = new System.Windows.Forms.MenuStrip();
             this.mArquivo = new System.Windows.Forms.ToolStripMenuItem();
             this.mArquivoNovo = new System.Windows.Forms.ToolStripMenuItem();
@@ -386,6 +387,7 @@
             this.Controls.Add(this.txtConteudo);
             this.Controls.Add(this.statusBar);
             this.Controls.Add(this.menuBar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuBar;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

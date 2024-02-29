@@ -261,7 +261,15 @@ namespace EditorTXT
 
         private void mExibirZoomReduzir_Click(object sender, EventArgs e)
         {
-            txtConteudo.ZoomFactor -= 0.25f;
+            if (txtConteudo.ZoomFactor <= 0.25f)
+            {
+                MessageBox.Show("Limite minimo de zoom atingido !");
+                txtConteudo.ZoomFactor = 0.25f;
+            }
+            else
+            {            
+                txtConteudo.ZoomFactor -= 0.25f;
+            }
             ZoomStatus(txtConteudo.ZoomFactor);
         }
 
