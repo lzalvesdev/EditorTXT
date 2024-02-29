@@ -269,27 +269,27 @@
             this.mExibirZoomReduzir,
             this.mExibirZoomRestaurar});
             this.mExibirZoom.Name = "mExibirZoom";
-            this.mExibirZoom.Size = new System.Drawing.Size(180, 22);
+            this.mExibirZoom.Size = new System.Drawing.Size(158, 22);
             this.mExibirZoom.Text = "Zoom";
             // 
             // mExibirZoomAmpliar
             // 
             this.mExibirZoomAmpliar.Name = "mExibirZoomAmpliar";
-            this.mExibirZoomAmpliar.Size = new System.Drawing.Size(180, 22);
+            this.mExibirZoomAmpliar.Size = new System.Drawing.Size(129, 22);
             this.mExibirZoomAmpliar.Text = "Ampliar";
             this.mExibirZoomAmpliar.Click += new System.EventHandler(this.mExibirZoomAmpliar_Click);
             // 
             // mExibirZoomReduzir
             // 
             this.mExibirZoomReduzir.Name = "mExibirZoomReduzir";
-            this.mExibirZoomReduzir.Size = new System.Drawing.Size(180, 22);
+            this.mExibirZoomReduzir.Size = new System.Drawing.Size(129, 22);
             this.mExibirZoomReduzir.Text = "Reduzir";
             this.mExibirZoomReduzir.Click += new System.EventHandler(this.mExibirZoomReduzir_Click);
             // 
             // mExibirZoomRestaurar
             // 
             this.mExibirZoomRestaurar.Name = "mExibirZoomRestaurar";
-            this.mExibirZoomRestaurar.Size = new System.Drawing.Size(180, 22);
+            this.mExibirZoomRestaurar.Size = new System.Drawing.Size(129, 22);
             this.mExibirZoomRestaurar.Text = "Restaurar";
             this.mExibirZoomRestaurar.Click += new System.EventHandler(this.mExibirZoomRestaurar_Click);
             // 
@@ -299,7 +299,7 @@
             this.mExibirStatus.CheckOnClick = true;
             this.mExibirStatus.CheckState = System.Windows.Forms.CheckState.Checked;
             this.mExibirStatus.Name = "mExibirStatus";
-            this.mExibirStatus.Size = new System.Drawing.Size(180, 22);
+            this.mExibirStatus.Size = new System.Drawing.Size(158, 22);
             this.mExibirStatus.Text = "Barra de status";
             this.mExibirStatus.Click += new System.EventHandler(this.mExibirStatus_Click);
             // 
@@ -317,12 +317,14 @@
             this.mAjudaExibir.Name = "mAjudaExibir";
             this.mAjudaExibir.Size = new System.Drawing.Size(138, 22);
             this.mAjudaExibir.Text = "Exibir ajuda";
+            this.mAjudaExibir.Click += new System.EventHandler(this.mAjudaExibir_Click);
             // 
             // mAjudaSobre
             // 
             this.mAjudaSobre.Name = "mAjudaSobre";
             this.mAjudaSobre.Size = new System.Drawing.Size(138, 22);
             this.mAjudaSobre.Text = "Sobre";
+            this.mAjudaSobre.Click += new System.EventHandler(this.mAjudaSobre_Click);
             // 
             // statusBar
             // 

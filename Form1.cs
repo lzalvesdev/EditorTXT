@@ -275,6 +275,21 @@ namespace EditorTXT
         {
             statusBar.Visible = mExibirStatus.Checked;
         }
+
         #endregion
+
+        #region Menu Ajuda
+        private void mAjudaExibir_Click(object sender, EventArgs e)
+        {
+            FormAjuda f = new FormAjuda();
+            f.Show();
+        }
+
+        private void mAjudaSobre_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Clone de um bloco de notas");
+        }
+        #endregion
+
     }
 }
