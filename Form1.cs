@@ -248,6 +248,33 @@ namespace EditorTXT
         }
         #endregion
 
+        #region Menu Exibir
+        private void ZoomStatus(float zoom)
+        {
+            StatusBarLabel.Text = $"{Math.Round(zoom * 100)}%";
+        }
+        private void mExibirZoomAmpliar_Click(object sender, EventArgs e)
+        {
+            txtConteudo.ZoomFactor += 0.25f;
+            ZoomStatus(txtConteudo.ZoomFactor);
+        }
 
+        private void mExibirZoomReduzir_Click(object sender, EventArgs e)
+        {
+            txtConteudo.ZoomFactor -= 0.25f;
+            ZoomStatus(txtConteudo.ZoomFactor);
+        }
+
+        private void mExibirZoomRestaurar_Click(object sender, EventArgs e)
+        {
+            txtConteudo.ZoomFactor = 1f;
+            ZoomStatus(txtConteudo.ZoomFactor);
+        }
+
+        private void mExibirStatus_Click(object sender, EventArgs e)
+        {
+            statusBar.Visible = mExibirStatus.Checked;
+        }
+        #endregion
     }
 }
