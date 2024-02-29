@@ -64,10 +64,21 @@
             this.mAjudaSobre = new System.Windows.Forms.ToolStripMenuItem();
             this.statusBar = new System.Windows.Forms.StatusStrip();
             this.StatusBarLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.txtConteudo = new System.Windows.Forms.RichTextBox();
+            this.toolBarNovo = new System.Windows.Forms.ToolStripButton();
+            this.toolBarAbrir = new System.Windows.Forms.ToolStripButton();
+            this.toolBarSalvar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolBarZoomMais = new System.Windows.Forms.ToolStripButton();
+            this.toolBarZoomMenos = new System.Windows.Forms.ToolStripButton();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolBarAjuda = new System.Windows.Forms.ToolStripButton();
+            this.toolBarZoom = new System.Windows.Forms.ToolStripButton();
             this.menuBar.SuspendLayout();
             this.statusBar.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -321,7 +332,7 @@
             this.mExibirStatus.CheckOnClick = true;
             this.mExibirStatus.CheckState = System.Windows.Forms.CheckState.Checked;
             this.mExibirStatus.Name = "mExibirStatus";
-            this.mExibirStatus.Size = new System.Drawing.Size(158, 22);
+            this.mExibirStatus.Size = new System.Drawing.Size(180, 22);
             this.mExibirStatus.Text = "Barra de status";
             this.mExibirStatus.Click += new System.EventHandler(this.mExibirStatus_Click);
             // 
@@ -345,7 +356,7 @@
             // mAjudaSobre
             // 
             this.mAjudaSobre.Name = "mAjudaSobre";
-            this.mAjudaSobre.Size = new System.Drawing.Size(138, 22);
+            this.mAjudaSobre.Size = new System.Drawing.Size(180, 22);
             this.mAjudaSobre.Text = "Sobre";
             this.mAjudaSobre.Click += new System.EventHandler(this.mAjudaSobre_Click);
             // 
@@ -366,18 +377,117 @@
             this.StatusBarLabel.Size = new System.Drawing.Size(35, 17);
             this.StatusBarLabel.Text = "100%";
             // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolBarNovo,
+            this.toolBarAbrir,
+            this.toolBarSalvar,
+            this.toolStripSeparator5,
+            this.toolBarZoomMais,
+            this.toolBarZoomMenos,
+            this.toolBarZoom,
+            this.toolStripSeparator6,
+            this.toolBarAjuda});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(784, 25);
+            this.toolStrip1.TabIndex = 3;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
             // txtConteudo
             // 
             this.txtConteudo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtConteudo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtConteudo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConteudo.Location = new System.Drawing.Point(0, 24);
+            this.txtConteudo.Location = new System.Drawing.Point(0, 49);
             this.txtConteudo.Name = "txtConteudo";
-            this.txtConteudo.Size = new System.Drawing.Size(784, 515);
-            this.txtConteudo.TabIndex = 2;
+            this.txtConteudo.Size = new System.Drawing.Size(784, 490);
+            this.txtConteudo.TabIndex = 4;
             this.txtConteudo.Text = "";
             this.txtConteudo.WordWrap = false;
-            this.txtConteudo.TextChanged += new System.EventHandler(this.txtConteudo_TextChanged);
+            // 
+            // toolBarNovo
+            // 
+            this.toolBarNovo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolBarNovo.Image = global::EditorTXT.Properties.Resources.new_document;
+            this.toolBarNovo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolBarNovo.Name = "toolBarNovo";
+            this.toolBarNovo.Size = new System.Drawing.Size(23, 22);
+            this.toolBarNovo.ToolTipText = "Novo";
+            this.toolBarNovo.Click += new System.EventHandler(this.mArquivoNovo_Click);
+            // 
+            // toolBarAbrir
+            // 
+            this.toolBarAbrir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolBarAbrir.Image = global::EditorTXT.Properties.Resources.folder;
+            this.toolBarAbrir.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolBarAbrir.Name = "toolBarAbrir";
+            this.toolBarAbrir.Size = new System.Drawing.Size(23, 22);
+            this.toolBarAbrir.ToolTipText = "Abrir";
+            this.toolBarAbrir.Click += new System.EventHandler(this.mArquivoAbrir_Click);
+            // 
+            // toolBarSalvar
+            // 
+            this.toolBarSalvar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolBarSalvar.Image = global::EditorTXT.Properties.Resources.save;
+            this.toolBarSalvar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolBarSalvar.Name = "toolBarSalvar";
+            this.toolBarSalvar.Size = new System.Drawing.Size(23, 22);
+            this.toolBarSalvar.ToolTipText = "Salvar";
+            this.toolBarSalvar.Click += new System.EventHandler(this.mArquivoSalvar_Click);
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolBarZoomMais
+            // 
+            this.toolBarZoomMais.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolBarZoomMais.Image = global::EditorTXT.Properties.Resources.zoom;
+            this.toolBarZoomMais.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolBarZoomMais.Name = "toolBarZoomMais";
+            this.toolBarZoomMais.Size = new System.Drawing.Size(34, 22);
+            this.toolBarZoomMais.Text = "+";
+            this.toolBarZoomMais.ToolTipText = "Zoom +";
+            this.toolBarZoomMais.Click += new System.EventHandler(this.mExibirZoomAmpliar_Click);
+            // 
+            // toolBarZoomMenos
+            // 
+            this.toolBarZoomMenos.Image = global::EditorTXT.Properties.Resources.zoom1;
+            this.toolBarZoomMenos.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolBarZoomMenos.Name = "toolBarZoomMenos";
+            this.toolBarZoomMenos.Size = new System.Drawing.Size(31, 22);
+            this.toolBarZoomMenos.Text = "-";
+            this.toolBarZoomMenos.ToolTipText = "Zoom -";
+            this.toolBarZoomMenos.Click += new System.EventHandler(this.mExibirZoomReduzir_Click);
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolBarAjuda
+            // 
+            this.toolBarAjuda.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolBarAjuda.Image = global::EditorTXT.Properties.Resources.help;
+            this.toolBarAjuda.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolBarAjuda.Name = "toolBarAjuda";
+            this.toolBarAjuda.Size = new System.Drawing.Size(23, 22);
+            this.toolBarAjuda.ToolTipText = "Ajuda";
+            this.toolBarAjuda.Click += new System.EventHandler(this.mAjudaExibir_Click);
+            // 
+            // toolBarZoom
+            // 
+            this.toolBarZoom.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolBarZoom.Image = global::EditorTXT.Properties.Resources.zoom;
+            this.toolBarZoom.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolBarZoom.Name = "toolBarZoom";
+            this.toolBarZoom.Size = new System.Drawing.Size(23, 22);
+            this.toolBarZoom.ToolTipText = "Zoom 100%";
+            this.toolBarZoom.Click += new System.EventHandler(this.mExibirZoomRestaurar_Click);
             // 
             // Form1
             // 
@@ -385,6 +495,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.txtConteudo);
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.statusBar);
             this.Controls.Add(this.menuBar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -396,6 +507,8 @@
             this.menuBar.PerformLayout();
             this.statusBar.ResumeLayout(false);
             this.statusBar.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -438,8 +551,18 @@
         private System.Windows.Forms.ToolStripMenuItem mAjudaSobre;
         private System.Windows.Forms.StatusStrip statusBar;
         private System.Windows.Forms.ToolStripStatusLabel StatusBarLabel;
-        private System.Windows.Forms.RichTextBox txtConteudo;
         private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton toolBarNovo;
+        private System.Windows.Forms.ToolStripButton toolBarAbrir;
+        private System.Windows.Forms.ToolStripButton toolBarSalvar;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripButton toolBarZoomMais;
+        private System.Windows.Forms.ToolStripButton toolBarZoomMenos;
+        private System.Windows.Forms.RichTextBox txtConteudo;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripButton toolBarAjuda;
+        private System.Windows.Forms.ToolStripButton toolBarZoom;
     }
 }
 

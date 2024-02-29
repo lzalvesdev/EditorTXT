@@ -78,6 +78,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -94,6 +95,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Notepad_23093.ico" />
+    <None Include="Properties\zoom1.ico" />
+    <None Include="Properties\zoom.ico" />
+    <None Include="Properties\text.ico" />
+    <None Include="Properties\save.ico" />
+    <None Include="Properties\notes.ico" />
+    <None Include="Properties\Notepad_23093.ico" />
+    <None Include="Properties\new document.ico" />
+    <None Include="Properties\help.ico" />
+    <None Include="Properties\folder.ico" />
+    <None Include="Properties\exit.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

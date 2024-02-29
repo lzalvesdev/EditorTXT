@@ -298,6 +298,5 @@ namespace EditorTXT
             MessageBox.Show("Clone de um bloco de notas");
         }
         #endregion
-
     }
 }
